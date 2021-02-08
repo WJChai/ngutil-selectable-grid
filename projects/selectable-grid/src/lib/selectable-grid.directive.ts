@@ -21,7 +21,7 @@ const _SelectableGridDirectiveMixinBase = mixinDestroyed(
 @Directive({
   selector: '[ngutilSelectableGrid]',
 })
-export class NgUtilSelectableGridDirective
+export class NgutilSelectableGridDirective
   extends _SelectableGridDirectiveMixinBase
   implements OnDestroy {
   @Output() selected = new EventEmitter<{

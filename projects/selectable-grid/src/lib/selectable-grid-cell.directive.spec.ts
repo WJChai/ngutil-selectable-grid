@@ -7,8 +7,8 @@ import {
 } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NgUtilSelectableGridCellDirective } from './selectable-grid-cell.directive';
-import { NgUtilSelectableGridDirective } from './selectable-grid.directive';
-import { NgUtilSelectableGridModule } from './selectable-grid.module';
+import { NgutilSelectableGridDirective } from './selectable-grid.directive';
+import { NgutilSelectableGridModule } from './selectable-grid.module';
 
 @Component({
   template: ` <table ngutilSelectableGrid>
@@ -54,7 +54,7 @@ describe('NgUtilSelectableGridCellDirective', () => {
   let component: TestComponent;
   let fixture: ComponentFixture<TestComponent>;
   let gridDe: DebugElement;
-  let gridDirective: NgUtilSelectableGridDirective;
+  let gridDirective: NgutilSelectableGridDirective;
   let cellDeR0C0: DebugElement;
   let cellDeR0C1: DebugElement;
   let cellDeR0C2: DebugElement;
@@ -65,7 +65,7 @@ describe('NgUtilSelectableGridCellDirective', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [TestComponent],
-      imports: [NgUtilSelectableGridModule],
+      imports: [NgutilSelectableGridModule],
     }).compileComponents();
   });
 
@@ -75,11 +75,11 @@ describe('NgUtilSelectableGridCellDirective', () => {
     fixture.detectChanges();
 
     gridDe = fixture.debugElement.query(
-      By.directive(NgUtilSelectableGridDirective)
+      By.directive(NgutilSelectableGridDirective)
     );
     gridDirective = gridDe.injector.get(
-      NgUtilSelectableGridDirective
-    ) as NgUtilSelectableGridDirective;
+      NgutilSelectableGridDirective
+    ) as NgutilSelectableGridDirective;
 
     [
       cellDeR0C0,

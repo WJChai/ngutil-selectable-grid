@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { NgUtilSelectableGridDirective } from './selectable-grid.directive';
+import { NgutilSelectableGridDirective } from './selectable-grid.directive';
 import { NgUtilSelectableGridCellDirective } from './selectable-grid-cell.directive';
 
 @NgModule({
   declarations: [
-    NgUtilSelectableGridDirective,
+    NgutilSelectableGridDirective,
     NgUtilSelectableGridCellDirective,
   ],
   imports: [],
-  exports: [NgUtilSelectableGridDirective, NgUtilSelectableGridCellDirective],
+  exports: [NgutilSelectableGridDirective, NgUtilSelectableGridCellDirective],
 })
-export class NgUtilSelectableGridModule {}
+export class NgutilSelectableGridModule {}

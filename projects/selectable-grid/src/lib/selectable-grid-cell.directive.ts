@@ -11,7 +11,7 @@ import { mixinDestroyed } from '@cwj0911/ngutil-common-behavior-mixins';
 import { fromEvent, Subject } from 'rxjs';
 import { filter, takeUntil, tap, throttle } from 'rxjs/operators';
 import { CellCoordination } from './cell-coordination';
-import { NgUtilSelectableGridDirective } from './selectable-grid.directive';
+import { NgutilSelectableGridDirective } from './selectable-grid.directive';
 
 class SelectableGridCellDirectiveBase {}
 const _SelectableGridCellDirectiveMixinBase = mixinDestroyed(
@@ -29,7 +29,7 @@ export class NgUtilSelectableGridCellDirective
   @Input('selectableGridCellCol') col: number | undefined;
 
   constructor(
-    private grid: NgUtilSelectableGridDirective,
+    private grid: NgutilSelectableGridDirective,
     private el: ElementRef<HTMLElement>,
     @Inject(DOCUMENT) public document: Document
   ) {
