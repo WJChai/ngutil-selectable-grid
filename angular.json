@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "selectable-grid": {
+      "projectType": "library",
+      "root": "projects/selectable-grid",
+      "sourceRoot": "projects/selectable-grid/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/selectable-grid/tsconfig.lib.json",
+            "project": "projects/selectable-grid/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/selectable-grid/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/selectable-grid/src/test.ts",
+            "tsConfig": "projects/selectable-grid/tsconfig.spec.json",
+            "karmaConfig": "projects/selectable-grid/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/selectable-grid/tsconfig.lib.json",
+              "projects/selectable-grid/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "selectable-grid"
 }

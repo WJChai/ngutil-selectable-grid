@@ -1,0 +1,22 @@
+{
+  "name": "@cwj0911/ngutil-selectable-grid",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^11.1.2",
+    "@angular/core": "^11.1.2",
+    "@cwj0911/ngutil-common-behavior-mixins": "^0.0.2"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "author": "Chai Wei Jian <chaiweijian0911@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "github.com/WJChai/ngutil-selectable-grid"
+  },
+  "keywords": [
+    "angular",
+    "util"
+  ],
+  "license": "MIT"
+}
