@@ -4,7 +4,7 @@
   "peerDependencies": {
     "@angular/common": "^11.1.2",
     "@angular/core": "^11.1.2",
-    "@cwj0911/ngutil-common-behavior-mixins": "^0.0.2"
+    "@cwj0911/ngutil-common-behavior-mixins": "0.0.4"
   },
   "dependencies": {
     "tslib": "^2.0.0"
